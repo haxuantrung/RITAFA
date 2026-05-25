@@ -1,15 +1,13 @@
 import {
-  Area,
-  AreaChart,
   Bar,
   BarChart,
   CartesianGrid,
+  Line,
+  LineChart,
   ResponsiveContainer,
   Tooltip,
   XAxis,
   YAxis,
-  Line,
-  LineChart,
 } from 'recharts';
 import { Download } from 'lucide-react';
 import { Card, Button, Badge } from '@components/ui';
