@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "description": "RITAFA E-Commerce Platform — Headless commerce with Swiss-Tech Minimalism design language. From Lab to Life.",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

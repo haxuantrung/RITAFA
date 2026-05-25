@@ -21,4 +21,20 @@ export default defineConfig({
     port: 5173,
     host: true,
   },
+  build: {
+    target: 'es2020',
+    sourcemap: false,
+    chunkSizeWarningLimit: 800,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Split heavy vendor libs so initial load stays small
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          'animation-vendor': ['framer-motion'],
+          'chart-vendor': ['recharts'],
+          'icons-vendor': ['lucide-react'],
+        },
+      },
+    },
+  },
 });
